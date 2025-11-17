@@ -1,1 +1,1 @@
-# Group 3 Minimal Project Structure
+# Group 7
