@@ -7,10 +7,19 @@ import time
 
 def main():
     # 1. 数据准备流程
+    # 确保路径正确
     filepath = r'blank_project\data\dft-road-casualty-statistics-accident-2021.csv'
     
     try:
+        print("正在加载部分数据")
         df = data_process.load_and_preprocess_data(filepath)
+
+        # frac=0.05 表示只取 5% 的数据
+        # random_state=42 保证每次采样的结果一样，结果可复现
+        print(f"原始数据量: {df.shape[0]} 行")
+        df = df.sample(frac=0.05, random_state=42) 
+        print(f"⏩ 采样后数据量: {df.shape[0]} 行 ")
+
         X, y = data_process.get_features_and_target(df)
         X_train, X_test, y_train, y_test = data_process.split_and_scale(X, y)
     except FileNotFoundError:
@@ -26,9 +35,9 @@ def main():
     results = {}
 
     for name, model in models.items():
-        # [关键修改] 跳过 KNN 模型，因为它在大数据集上太慢了
+        # [核心修改] 明确跳过 KNN，其他全部运行
         if name == 'KNN':
-            print(f"⏩ 跳过模型: {name} (计算量过大)")
+            print(f"⏩ 跳过模型: {name} (避免卡顿)")
             continue
 
         print(f"\n正在训练模型: {name} ...")
@@ -38,7 +47,6 @@ def main():
         model.fit(X_train, y_train)
         
         # 预测与评估
-        # evaluate_model 函数内部会打印准确率
         acc = evaluate.evaluate_model(model, X_test, y_test, name)
         results[name] = acc
         
@@ -57,6 +65,7 @@ def main():
     print("="*30)
     print("正在进行网格搜索 (Grid Search)...")
     
+    # 恢复较完整的参数搜索空间
     hyperparameters = {
         'penalty': ['l1', 'l2'],
         'C': [0.01, 0.1, 1, 10, 100],
@@ -64,8 +73,10 @@ def main():
     }
 
     start_time = time.time()
-    # n_jobs=-1 仍然保留，利用多核加速
-    grid_clf = GridSearchCV(LogisticRegression(), hyperparameters, cv=5, verbose=1, n_jobs=-1)
+    
+    # [重要] 保持 n_jobs=1 以防止 Windows 报错
+    grid_clf = GridSearchCV(LogisticRegression(), hyperparameters, cv=5, verbose=1, n_jobs=1)
+    
     grid_clf.fit(X_train, y_train)
     elapsed = time.time() - start_time
 
