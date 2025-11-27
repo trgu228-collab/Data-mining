@@ -15,27 +15,28 @@ This repository includes code, dataset handling, model training scripts, evaluat
 ## 📁 Repository Structure
 
 data/
-├── raw/ # Original CSV dataset (not tracked by Git)
-├── processed/ # Cleaned / transformed data (optional)
+├── raw/                # Original CSV dataset (not tracked by Git)
+├── processed/          # Cleaned / transformed data (optional)
 
 notebooks/
-├── placeholder.ipynb # Initial exploration / prototyping
+├── placeholder.ipynb   # Initial exploration / prototyping
 
 src/
-├── baseline.py # Basic ML models (Logistic, DT, RF, KNN)
-├── advanced.py # Advanced ML models (GBDT, XGBoost)
-├── data_utils.py # Data loading, cleaning, feature extraction
-├── train.py # Train models, scaling, pipeline logic
-├── evaluate.py # Accuracy computation, bar chart generation
-├── main.py # Master script: run full pipeline
-├── init.py # Package marker
+├── baseline.py         # Basic ML models (Logistic, DT, RF, KNN)
+├── advanced.py         # Advanced ML models (GBDT, XGBoost)
+├── data_utils.py       # Data loading, cleaning, feature extraction
+├── train.py            # Train models, scaling, pipeline logic
+├── evaluate.py         # Accuracy computation, bar chart generation
+├── main.py             # Master script: run full pipeline
+├── __init__.py         # Package marker
 
 reports/
-├── figures/ # Accuracy comparison figure saved here
+├── figures/            # Accuracy comparison figure saved here
 
-requirements.txt # Python dependencies
-run.sh # One-click shell script to run pipeline
-README.md # This file
+requirements.txt        # Python dependencies  
+run.sh                  # One-click shell script to run pipeline  
+README.md               # This file
+
 ---
 
 ## 🚀 Quickstart
