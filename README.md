@@ -27,7 +27,7 @@ blank_project/
 │   ├── train.py                   # Dataset split, scaling, training logic
 │   ├── evaluate.py                # Evaluation metrics, plotting accuracy bar chart
 │   └── main.py                    # Master pipeline runner that ties all modules together
-README.md                          # Main project description and instructions
+README.md                          # Main project description and instructions. You are here*
 requirements.txt                   # Python package dependencies
 run.sh                             # Shell script for one-click pipeline execution
 ```
@@ -57,12 +57,12 @@ Save a comparison chart to reports/figures/accuracy_comparison.png
 ---
 
 ## 👥 Group Members
-- 缪健铭 - Evaluation Lead  
+- 张靖琳 - Project Lead
+- 费力勤 - Data Lead
 - 惠志文 - Modeling Lead  
-- 张靖琳 - Project Lead 
-- 宋知恒 - Evaluation Lead  
-- 费力勤 - Product/Comms Lead  
-
+- 缪健铭 - Evaluation Lead  
+- 宋知恒 - Product/Comms Lead  
+  
 ---
 
 ## 📜 License
