@@ -16,12 +16,16 @@ This repository includes code, dataset handling, model training scripts, evaluat
 
 ```
 project/
-├── data/
+├── data/                          # data folder
 |   └── link.md                    # raw data's link
 |
 ├── notebooks/                     # Jupyter notebooks folder
 │   └── placeholder.ipynb          # Placeholder notebook (replace with actual analysis)
 |
+├── reports/                       # figures & contribution_log
+|   ├── figures/                   # results diagrams
+|   └── contribution_log.md        # two weeks' contribution
+|                         
 ├── src/                           # All Python source code modules
 │   ├── __init__.py                # Package marker
 │   ├── baseline.py                # Basic ML models: Logistic, Decision Tree, RF, KNN
