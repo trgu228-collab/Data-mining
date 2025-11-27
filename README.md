@@ -15,7 +15,7 @@ This repository includes code, dataset handling, model training scripts, evaluat
 ## 📁 Repository Structure
 
 ```
-blank_project/
+project/
 ├── notebooks/                     # Jupyter notebooks folder
 │   └── placeholder.ipynb          # Placeholder notebook (replace with actual analysis)
 │
