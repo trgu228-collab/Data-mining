@@ -16,9 +16,12 @@ This repository includes code, dataset handling, model training scripts, evaluat
 
 ```
 project/
+├── data/
+|   └── link.md                    # raw data's link
+|
 ├── notebooks/                     # Jupyter notebooks folder
 │   └── placeholder.ipynb          # Placeholder notebook (replace with actual analysis)
-│
+|
 ├── src/                           # All Python source code modules
 │   ├── __init__.py                # Package marker
 │   ├── baseline.py                # Basic ML models: Logistic, Decision Tree, RF, KNN
@@ -27,7 +30,7 @@ project/
 │   ├── train.py                   # Dataset split, scaling, training logic
 │   ├── evaluate.py                # Evaluation metrics, plotting accuracy bar chart
 │   └── main.py                    # Master pipeline runner that ties all modules together
-
+ 
 README.md                          # Main project description and instructions. You are here*
 
 requirements.txt                   # Python package dependencies
