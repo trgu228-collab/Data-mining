@@ -27,8 +27,11 @@ blank_project/
 │   ├── train.py                   # Dataset split, scaling, training logic
 │   ├── evaluate.py                # Evaluation metrics, plotting accuracy bar chart
 │   └── main.py                    # Master pipeline runner that ties all modules together
+
 README.md                          # Main project description and instructions. You are here*
+
 requirements.txt                   # Python package dependencies
+
 run.sh                             # Shell script for one-click pipeline execution
 ```
 
