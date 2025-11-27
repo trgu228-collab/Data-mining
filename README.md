@@ -14,6 +14,7 @@ This repository includes code, dataset handling, model training scripts, evaluat
 
 ## 📁 Repository Structure
 
+```
 data/
 ├── raw/                # Original CSV dataset (not tracked by Git)
 ├── processed/          # Cleaned / transformed data (optional)
@@ -36,6 +37,7 @@ reports/
 requirements.txt        # Python dependencies  
 run.sh                  # One-click shell script to run pipeline  
 README.md               # This file
+```
 
 ---
 
