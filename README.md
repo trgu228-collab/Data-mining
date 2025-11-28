@@ -24,7 +24,7 @@ project/
 |
 ├── reports/                       # figures & contribution_log
 |   ├── figures/                   # results diagrams
-|   └── contribution_log.md        # two weeks' contribution
+|   └── contribution_log.md        # three weeks' contribution
 |                         
 ├── src/                           # All Python source code modules
 │   ├── __init__.py                # Package marker
