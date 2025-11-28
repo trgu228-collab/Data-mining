@@ -28,7 +28,7 @@ project/
 |                         
 ├── src/
 │   ├── __init__.py                # Package initializer
-|   ├── baseline.py                # Baseline ML models (Logistic, DT, RF, GBDT, XGBoost)
+|   ├── baseline.py                # Basic and Advanced ML models (Logistic, DT, RF, GBDT, XGBoost)
 |   ├── data_process.py            # Data loading, cleaning, encoding, feature selection
 |   ├── evaluate.py                # Model evaluation and accuracy comparison plots
 |   ├── figure.py                  # Advanced visualization (efficiency plot, feature lollipop)
