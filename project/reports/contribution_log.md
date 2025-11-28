@@ -1,10 +1,9 @@
----
+
 
 # 📘 **Three-Week Team Contribution Log (Nov 3 – Nov 28)**
 
 *Group G7 — Traffic Accident Severity Prediction*
 
----
 
 ## 🗓 **Week 1 (Nov 3 – Nov 10)**
 
