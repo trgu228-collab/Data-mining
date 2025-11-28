@@ -26,19 +26,20 @@ project/
 |   ├── figures/                   # dataset & features & results diagrams
 |   └── contribution_log.md        # three weeks' contribution
 |                         
-├── src/                           # All Python source code modules
-│   ├── __init__.py                # Package marker
-│   ├── baseline.py                # Basic ML models: Logistic, Decision Tree, RF, KNN
-│   ├── advanced.py                # Advanced ML models: GBDT, XGBoost
-│   ├── data_utils.py              # Dataset loading, cleaning, feature/label separation
-│   ├── train.py                   # Dataset split, scaling, training logic
-│   ├── evaluate.py                # Evaluation metrics, plotting accuracy bar chart
-│   └── main.py                    # Master pipeline runner that ties all modules together
- 
+├── src/
+│   ├── __init__.py                # Package initializer
+|   ├── baseline.py                # Baseline ML models (Logistic, DT, RF, GBDT, XGBoost)
+|   ├── data_process.py            # Data loading, cleaning, encoding, feature selection
+|   ├── evaluate.py                # Model evaluation and accuracy comparison plots
+|   ├── figure.py                  # Advanced visualization (efficiency plot, feature lollipop)
+|   ├── train.py                   # Full training pipeline (final reproducible version)
+|   ├── train_fast.py              # Lightweight training pipeline (5% sampling for fast testing)
+|   └── README.md                  # Description of all modules in this folder
+|
 README.md                          # Main project description and instructions. You are here*
-
+|
 requirements.txt                   # Python package dependencies
-
+|
 run.sh                             # Shell script for one-click pipeline execution
 ```
 
