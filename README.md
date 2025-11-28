@@ -23,7 +23,7 @@ project/
 │   └── placeholder.ipynb          # Placeholder notebook (replace with actual analysis)
 |
 ├── reports/                       # figures & contribution_log
-|   ├── figures/                   # results diagrams
+|   ├── figures/                   # dataset & features & results diagrams
 |   └── contribution_log.md        # three weeks' contribution
 |                         
 ├── src/                           # All Python source code modules
