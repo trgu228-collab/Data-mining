@@ -17,7 +17,7 @@ This repository includes code, dataset handling, model training scripts, evaluat
 ```
 project/
 ├── data/                          # data folder
-|   └── link.md                    # raw data's link
+|   └── DATASET.md                 # raw data's resource & license & feature & split & clean-step
 |
 ├── notebooks/                     # Jupyter notebooks folder
 │   └── placeholder.ipynb          # Placeholder notebook (replace with actual analysis)
